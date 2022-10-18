@@ -1,0 +1,30 @@
+
+<div>
+<table border = "1">
+
+    <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Coursee</td>
+            <td>Ação</td>
+    </tr>
+    <tr *ngFor="let alu of alunos">
+            <td>{{alu.id}}</td>
+            <td>{{alu.name | uppercase}}</td>
+            <td>{{alu.age}}</td>
+            <td>{{alu.course | uppercase}}</td>
+            <td>
+                <button type="button" (click)="onSelect(alu)">Editar</button>
+            </td>
+
+    </tr>
+
+</table>
+</div>
+<div *ngIf="selectedAluno">
+    <h2>{{selectedAluno.name}}</h2>
+    <div>id: {{selectedAluno.id}}</div>
+
+</div>
+
