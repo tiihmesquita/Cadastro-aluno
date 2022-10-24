@@ -30,7 +30,8 @@
     padding-top: 20px;
 }
 table{
-
+    padding: 5px;
+    border-radius: 7px;
     background-color: rgb(228, 220, 215);
     border-color: rgb(16, 18, 20);
     
