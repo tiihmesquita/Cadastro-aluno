@@ -6,8 +6,8 @@
             <td>Id</td>
             <td>Name</td>
             <td>Age</td>
-            <td>Coursee</td>
-            <td>Ação</td>
+            <td>Course</td>
+            <td>Opção</td>
     </tr>
     <tr *ngFor="let alu of alunos">
             <td>{{alu.id}}</td>
@@ -23,9 +23,13 @@
 </table>
 </div>
 <div *ngIf="selectedAluno">
-    <span>Alunos:</span>
-    <h2>{{selectedAluno.name}}</h2>
-    <div>id: {{selectedAluno.id}}</div>
 
+    <h2>Aluno: {{selectedAluno.name}}</h2>
+   <h2> Course: {{selectedAluno.course}}</h2>
+    <div>
+        <label>nome:</label>
+        <input id="name" [(ngModel)]="selectedAluno.name" placeholder="name">
+
+    </div>
 </div>
 
