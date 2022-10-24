@@ -1,0 +1,54 @@
+.container {
+
+    display: flex;
+    background-color: rgb(184, 164, 109);
+    width: 50%;
+    height: 50%;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 310px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px  10px black;
+}
+.cadastros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.if {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.dados {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+table{
+
+    background-color: rgb(228, 220, 215);
+    border-color: rgb(16, 18, 20);
+    
+}
+tr{
+    text-align: center;
+}
+button{
+    background-color: rgb(252, 252, 252);
+    color: black;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(27, 26, 26);
+}
+button:hover{
+    background-color: rgb(170, 170, 170);
+    color: black;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(27, 26, 26);
+}

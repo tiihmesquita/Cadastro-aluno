@@ -1,6 +1,8 @@
+<div class = "container">
 
-<div>
-<table border = "1">
+<div class="cadastros">
+<h2>Alunos cadastrados</h2>
+<table >
 
     <tr>
             <td>Id</td>
@@ -22,14 +24,13 @@
 
 </table>
 </div>
-<div *ngIf="selectedAluno">
-
-    <h2>Aluno: {{selectedAluno.name}}</h2>
-   <h2> Course: {{selectedAluno.course}}</h2>
-    <div>
-        <label>nome:</label>
+<div class = "if" *ngIf="selectedAluno">
+    <h2>Aluno</h2>
+    <h2>{{selectedAluno.name}} - {{selectedAluno.course}}</h2>
+   <h2> Editar: </h2>
+    <div class = "dados">
+        <label>Nome:</label>
         <input id="name" [(ngModel)]="selectedAluno.name" placeholder="name">
-
+        <label>Curso:</label>
+        <input id="course" [(ngModel)]="selectedAluno.course" placeholder="course">
     </div>
-</div>
-
